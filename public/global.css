@@ -1,0 +1,17 @@
+
+:root {
+    --purple: #7D66FF;
+    --green: #00FC71;
+    --black: #080A0C;
+    --white: #ffffff;
+    --dark-grey: #191A1E;
+    --grey: #252525;
+    --light-grey: #6B6C6E;
+
+    --body: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
