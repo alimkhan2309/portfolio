@@ -3,26 +3,29 @@ import ButtonComponent from './ButtonComponent.vue';
 
 export default {
     props: ['title', 'image'],
-    components: { ButtonComponent }, // Fixed typo "component" → "components"
+    components: { ButtonComponent }, 
 };
 </script>
 
 <template>
-  <div class="card">
+  <div class="case-card">
     <div class="image-container">
       <img :src="require(`@/assets/${image}`)" alt="Project Display">
     </div>
     <div class="info-bar">
       <h3>{{ title }}</h3>
       <ButtonComponent text="Learn More" type="secondary"></ButtonComponent>
-    </div>
+    </div>  
   </div>
 </template>
 
 <style scoped>
-.card {
-    width: clamp(280px, 24vw, 380px);
-    height: 553px;
+.case-card {
+    /* width: clamp(280px, 24vw, 380px); */
+    /* width: clamp(18.375rem, 15.061274509803923rem + 13.594771241830065vw, 31.375rem); */
+    width:fill;
+    aspect-ratio: 502/738;
+    /* height: 553px; */
     background-color: var(--dark-grey);
     display: flex;
     flex-direction: column;
@@ -46,7 +49,7 @@ img {
 }
 
 .info-bar {
-    width: 100%; /* Fill the entire card width */
+    width: Fill; /* Fill the entire card width */
     background-color: var(--grey);
     color: var(--white);
     display: flex;
@@ -57,13 +60,4 @@ img {
     z-index: 1;
     border-radius: 0 0 40px 40px;
 }
-
-
-@media :  {
-    
-};
-
-
-
-
 </style>

@@ -9,9 +9,21 @@
     --light-grey: #6B6C6E;
 
     --body: 16px;
+
 }
 
 * {
     padding: 0;
     margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    background-color: var(--dark-grey);
+    border-radius: 40px;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
 }
